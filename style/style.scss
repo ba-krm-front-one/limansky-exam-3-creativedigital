@@ -1,0 +1,745 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: all 0.1s ease-in;
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+  height: 100%;
+}
+
+body, html {
+  min-height: 100%;
+}
+
+//--header
+
+.ba-header {
+  background: #e4b783 url("../img/Rectangle 9.png") 50% no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+}
+
+.ba-header__container {
+  &--menu {
+    margin: 0 auto;
+    padding: 45px 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    max-width: 1200px;
+    .ba-logo {
+      background: url("../img/logo@2x.svg") 50% no-repeat;
+      background-size: cover;
+      float: left;
+      /* Style for "Bouncy" */
+      /* Style for "Logo" */
+      width: 54px;
+      height: 72px;
+    }
+  }
+}
+
+//---nav menu
+nav .ba-menu {
+  list-style-type: none;
+  &__item {
+    float: left;
+    padding-right: 15px;
+    display: block;
+    height: auto;
+  }
+}
+
+.ba-menu__link {
+  /* Style for "Hello Port" */
+  text-decoration: none;
+  width: 81px;
+  height: 18px;
+  color: #ffffff;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 60px;
+  text-transform: uppercase;
+
+  border: 1px solid transparent;
+  padding: 10px 20px;
+  border-radius: 20px;
+  &:hover {
+    /* Style for "Rounded Re" */
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+  }
+}
+
+@media all and (max-width: 600px) {
+   .ba-menu{
+     display: flex;
+     flex-direction: column;
+   }
+.ba-menu__item{
+  margin: 15px;
+}
+  //.ba-menu__link {
+  //  margin-right: 0;
+  //  display: block;
+  //  margin-bottom: 10px;
+  //}
+
+}
+
+
+
+
+//-----banner
+.ba-header__banner {
+  margin: 0 auto;
+  padding: 230px 0 270px;
+  text-align: center;
+  &--title {
+    /* Style for "We Are Cod" */
+    margin: 0px auto 30px;
+    color: #fefefb;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+  &--text {
+    /* Style for "At vero eo" */
+    max-width: 604px;
+
+    width: 656px;
+    color: #fefdfd;
+    font-family: "PT Sans", sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    margin: 0 auto;
+    letter-spacing: 2px;
+  }
+}
+
+//---------
+
+//----------about us section
+.about-us{
+  /* Style for "About-Bg" */
+  min-height: 800px;
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  padding-top: 124px;
+  margin: 0 auto;
+  &__img{
+    background: url("../img/DeathtoStock_Wired8.png") 50% center;
+    background-size: cover;
+    /* Style for "DeathtoSto" */
+    width: 380px;
+    height: 555px;
+    flex-shrink: 0;
+    text-align: center;
+  }
+  &__description{
+    /* Style for "Shape 2" */
+    width: 790px;
+    height: 557px;
+    background-color: #ebebeb;
+    padding: 78px 34px 0 123px;
+    &--text{
+      /* Style for "Descriptio" */
+      width: 633px;
+      height: 236px;
+      color: #665f60;
+      font-family: "PT Sans", sans-serif;
+      font-size: 20px;
+    }
+    &--button{
+      /* Style for "btn-shape" */
+      width: 195px;
+      height: 50px;
+      border: 1px solid #7d7a7c;
+      /* Style for "Learn More" */
+      color: #7d7a7c;
+      font-family: "PT Sans",sans-serif;
+      font-size: 20px;
+      font-style: italic;
+      background-color: transparent;
+      text-align: center;
+      display: block;
+      margin: 80px auto 0;
+    }
+  }
+}
+.abouts-us__img--icon{
+  margin: 50px 0;
+}
+.abouts-us__img--text{
+  /* Style for "About Us" */
+  color: #fefbfc;
+  font-family: "Proxima Nova",sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 47px;
+  text-transform: uppercase;
+}
+
+//----------------
+
+//----------------isotope blocks
+.about-us-cont{
+  min-height: 800px;
+  background-color: #ebebeb;
+}
+.about-us__blocks{
+  /* Style for "Desc-tile-" */
+  max-width: 1230px;
+  margin: 0 auto;
+  &--square{
+    /* Style for "Rectangle" */
+    width: 410px;
+    height: 400px;
+    background-color: #dbdbdb;
+    float: left;
+    text-align: center;
+  }
+  &--rectangle{
+    /* Style for "unsplash_5" */
+    width: 410px;
+    height: 799px;
+    background: url("../img/unsplash_523ae1f5502d6_1.png") 50% center;
+    background-size: cover;
+    float: left;
+    text-align: center;
+  }
+}
+.about-us__blocks>div:nth-child(even){
+  background-color: #ebebeb
+}
+.square__icon{
+  margin: 100px 166px 30px;
+}
+.square__title{
+  /* Style for "Text-Title" */
+  color: #665f60;
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.square__text{
+  /* Style for "Text-desc" */
+  color: #665f60;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-style: italic;
+}
+.rectangle__icon{
+  margin: 100px 166px 30px;
+}
+.rectangle__title{
+  /* Style for "OUR SERVIC" */
+  color: #fefcfd;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.rectangle__text{
+  /* Style for "Blockquote" */
+  color: #fefcfd;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  /* Text style for "Blockquote" */
+  font-style: italic;
+  /* Text style for "" */
+  font-weight: 700;
+  margin: 150px auto;
+}
+
+
+//----------------
+
+
+//-------------recent works
+.recent-works{
+  /* Style for "works-bg" */
+  height: 1000px;
+  background: #9f9acf url("../img/DeathtoStock_Wired3.png") 50% no-repeat;
+  opacity: 0.7;
+  background-size: cover;
+  text-align: center;
+}
+.recent-works__icon{
+  margin: 50px auto 10px;
+}
+.recent-works__title{
+/* Style for "RECENT WOR" */
+color: #fefcfd;
+font-family: "Proxima Nova", sans-serif;
+font-size: 36px;
+font-weight: 600;
+text-transform: uppercase;
+  margin-bottom: 50px;
+
+}
+
+.carousel-cell img {
+  /* Style for "Campofrío_" */
+  width: 730px;
+  height: 546px;
+}
+
+.recent-works__button{
+  /* Style for "btn-shape" */
+  width: 195px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  /* Style for "Btn-Text" */
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  display: block;
+  margin: 100px auto 0;
+}
+
+//----------------
+
+//----------------team
+
+.team{
+  /* Style for "Our Team-B" */
+
+  min-height: 800px;
+  background-color: #ebebeb;
+  text-align: center;
+  &__icon{
+    /* Style for "Icon-Team" */
+    margin-top: 60px;
+    width: 60px;
+    height: 60px;
+  }
+  &__title{
+    /* Style for "MEET OUR T" */
+    color: #665f60;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+.team {
+  &__slider {
+    max-width: 1110px;
+    height: 485px;
+    margin: 0 auto;
+    &-item {
+      width: 350px;
+      display: inline-block;
+      height: 355px;
+      background-color: #fff;
+      position: relative;
+      margin-right: 12px;
+      margin-left: 12px;
+      &:hover {
+        cursor: pointer;
+      }
+      &-photo {
+        background-color: #ebebeb;
+        position: relative;
+        width: 260px;
+        margin: 0 auto;
+        top: -125px;
+        height: 260px;
+        border-radius: 50%;
+        padding-top: 11px;
+      }
+      h4 {
+        width: 200px;
+        text-align: center;
+        margin: -95px auto 17px auto;
+        text-transform: uppercase;
+      }
+      p {
+        width: 200px;
+        text-align: center;
+        margin: 0 auto;
+        font-style: italic;
+      }
+      &-contact {
+        width: 100%;
+        height: 70px;
+        background-color: #9f9acf;
+        bottom: 0;
+        position: absolute;
+        text-align: center;
+        padding-top: 20px;
+        a {
+          display: inline-block;
+          margin-left: 8px;
+          margin-right: 8px;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          &:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            transform: scale(1.07);
+            transition: all 0.2s;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+  //----------------portolio section
+.ba-portfolio {
+  width: 100%;
+  min-height: 1400px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f3f3f3;
+
+  &--title {
+    /* Style for "THE PORTFO" */
+    display: block;
+    color: #333b46;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 12px;
+    text-transform: uppercase;
+    margin: 0px auto 20px;
+    padding-top: 80px;
+    letter-spacing: 7px;
+  }
+  &--text {
+    display: block;
+    /* Style for "At vero eo" */
+    width: 457px;
+    height: 39px;
+    color: #81868e;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0 auto 80px;
+  }
+}
+
+.ba-portfolio--works {
+  list-style-type: none;
+  padding-bottom: 70px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  &__button {
+    display: block;
+    padding: 0 5px;
+    a {
+      text-decoration: none;
+      padding: 20px;
+      border-bottom: 2px solid transparent;
+      &:hover {
+        padding: 20px;
+        border-bottom: 2px solid #19bd9a;
+      }
+    }
+  }
+}
+
+.ba-sizer {
+  width: 20%;
+  visibility: hidden;
+}
+.ba-works {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+//----------------
+
+//----------------team section
+.ba-team {
+  text-align: center;
+  margin: 0 auto;
+  padding: 80px 30px;
+  &__title {
+    /* Style for "THE TEAM" */
+    color: #333b46;
+    font-family: "Source Sans Pro",sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: 7px;
+  }
+  &__text {
+    /* Style for "At vero eo" */
+    width: 457px;
+    color: #81868e;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    margin: 20px auto 50px;
+  }
+}
+
+.ba-team__content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1020px;
+  padding: 0 30px;
+  margin: 0 auto;
+
+  &--pic {
+    flex-shrink: 0;
+    img {
+      /* Style for "Layer 103" */
+      width: 285px;
+      height: 364px;
+    }
+  }
+  &--right {
+
+    text-align: right;
+  }
+}
+.carousel-cell{
+  width: 100%;
+}
+
+.carousel{
+  /* Style for "Rectangle" */
+
+}
+
+.ba-team__content--right {
+  .title {
+    border-right: 4px solid #19bd9a;
+    margin-bottom: 30px;
+    padding-right: 15px;
+  }
+  .title h1 {
+    /* Style for "Abdullah N" */
+    color: #464646;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+
+  }
+  .title h2 {
+    /* Style for "Creative D" */
+    display: block;
+    color: #81868e;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 25px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  p {
+    /* Style for "At vero eo" */
+    width: 370px;
+    color: #81868e;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    display: block;
+  }
+}
+
+//----------------already
+.already-contact {
+  min-height: 201px;
+  background: url("../img/already.png");
+  text-align: center;
+  padding: 50px 30px;
+  &--title {
+    /* Style for "Already Lo" */
+    width: 283px;
+    height: 20px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0 auto;
+  }
+  &--button {
+    /* Style for "BG" */
+    width: 140px;
+    height: 37px;
+    border-radius: 18px;
+    border: 1px solid #ffffff;
+    /* Style for "Contact Us" */
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 12px;
+    background-color: transparent;
+    margin-top: 30px;
+
+  }
+}
+
+//----------------
+
+//-------------testeminoals
+.testimonials {
+  min-height: 650px;
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 80px 30px;
+  &__title {
+    /* Style for "Testimonia" */
+    letter-spacing: 7px;
+    color: #333b46;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 12px;
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+  &__text {
+    /* Style for "At vero eo" */
+
+    color: #81868e;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 30px auto;
+
+  }
+}
+.testimonials__block--slider{
+  width: 1170px;
+  height: 316px;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+.testimonials__container {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  max-width: 1170px;
+  padding: 70px 50px;
+  margin: 0 auto;
+  text-align: center;
+  &--right {
+    max-width: 880px;
+    text-align: left;
+    padding: 0 30px;
+    .text {
+      /* Style for "At vero eo" */
+      color: #81868e;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      margin-bottom: 30px;
+    }
+    .name{
+      /* Style for "PARTHO" */
+      color: #19bd9a;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+    .proff{
+      /* Style for "FOUNDER, A" */
+      width: 167px;
+      height: 11px;
+      color: #464646;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+//----------------
+
+//----------------contact us
+.contact-us{
+  min-height: 240px;
+  text-align: center;
+  padding: 60px 30px;
+
+  h1{
+    /* Style for "Contact Us" */
+    letter-spacing: 7px;
+    color: #333b46;
+    font-family: "Source Sans Pro";
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 12px;
+    text-transform: uppercase;
+  }
+  p{
+    /* Style for "At vero eo" */
+    width: 457px;
+    color: #81868e;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0 auto;
+  }
+}
+//----------------
+
+//-----------map
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+//----------------
+//-------------footer
+footer{
+  min-height:260px;
+  text-align: center;
+  padding: 70px 30px 40px;
+  p{
+    margin: 30px auto;
+  }
+
+}
+//----------------
+//----------------
