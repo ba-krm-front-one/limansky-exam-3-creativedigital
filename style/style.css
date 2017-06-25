@@ -16,7 +16,7 @@ body, html {
   min-height: 100%; }
 
 .ba-header {
-  background: #e4b783 url("../img/Rectangle 9.png") 50% no-repeat;
+  background: #9f9acf url("../img/Rectangle 9.png") 50% no-repeat;
   background-size: cover;
   position: relative;
   min-height: 100vh; }
@@ -132,7 +132,7 @@ nav .ba-menu {
       border: 1px solid #7d7a7c;
       /* Style for "Learn More" */
       color: #7d7a7c;
-      font-family: "PT Sans",sans-serif;
+      font-family: "PT Sans", sans-serif;
       font-size: 20px;
       font-style: italic;
       background-color: transparent;
@@ -146,7 +146,7 @@ nav .ba-menu {
 .abouts-us__img--text {
   /* Style for "About Us" */
   color: #fefbfc;
-  font-family: "Proxima Nova",sans-serif;
+  font-family: "Proxima Nova", sans-serif;
   font-size: 36px;
   font-weight: 600;
   line-height: 47px;
@@ -193,7 +193,7 @@ nav .ba-menu {
 .square__text {
   /* Style for "Text-desc" */
   color: #665f60;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: italic; }
 
@@ -239,6 +239,9 @@ nav .ba-menu {
   text-transform: uppercase;
   margin-bottom: 50px; }
 
+.element {
+  width: 100%; }
+
 .carousel-cell img {
   /* Style for "Campofr├нo_" */
   width: 730px;
@@ -260,7 +263,7 @@ nav .ba-menu {
 
 .team {
   /* Style for "Our Team-B" */
-  min-height: 800px;
+  min-height: 850px;
   background-color: #ebebeb;
   text-align: center; }
   .team__icon {
@@ -279,7 +282,7 @@ nav .ba-menu {
 .team__slider {
   max-width: 1110px;
   height: 485px;
-  margin: 0 auto; }
+  margin: 100px auto 0; }
   .team__slider-item {
     width: 350px;
     display: inline-block;
@@ -287,18 +290,19 @@ nav .ba-menu {
     background-color: #fff;
     position: relative;
     margin-right: 12px;
-    margin-left: 12px; }
+    margin-left: 12px;
+    top: 110px; }
     .team__slider-item:hover {
       cursor: pointer; }
     .team__slider-item-photo {
       background-color: #ebebeb;
       position: relative;
-      width: 260px;
       margin: 0 auto;
       top: -125px;
       height: 260px;
       border-radius: 50%;
-      padding-top: 11px; }
+      padding-top: 11px;
+      border: 10px solid transparent; }
     .team__slider-item h4 {
       width: 200px;
       text-align: center;
@@ -329,273 +333,212 @@ nav .ba-menu {
           transform: scale(1.07);
           transition: all 0.2s; }
 
-.ba-portfolio {
+.flickity-viewport {
+  height: 555px !important; }
+
+.get-in-touch {
+  margin: 0 auto;
+  height: 900px;
   width: 100%;
-  min-height: 1400px;
-  margin: 0 auto;
-  text-align: center;
-  background-color: #f3f3f3; }
-  .ba-portfolio--title {
-    /* Style for "THE PORTFO" */
-    display: block;
-    color: #333b46;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 12px;
-    text-transform: uppercase;
-    margin: 0px auto 20px;
-    padding-top: 80px;
-    letter-spacing: 7px; }
-  .ba-portfolio--text {
-    display: block;
-    /* Style for "At vero eo" */
-    width: 457px;
-    height: 39px;
-    color: #81868e;
-    font-family: "Open Sans",sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 25px;
-    margin: 0 auto 80px; }
-
-.ba-portfolio--works {
-  list-style-type: none;
-  padding-bottom: 70px;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  justify-content: center; }
-  .ba-portfolio--works__button {
-    display: block;
-    padding: 0 5px; }
-    .ba-portfolio--works__button a {
-      text-decoration: none;
-      padding: 20px;
-      border-bottom: 2px solid transparent; }
-      .ba-portfolio--works__button a:hover {
-        padding: 20px;
-        border-bottom: 2px solid #19bd9a; }
-
-.ba-sizer {
-  width: 20%;
-  visibility: hidden; }
-
-.ba-works {
-  max-width: 1200px;
-  margin: 0 auto; }
-
-.ba-team {
-  text-align: center;
-  margin: 0 auto;
-  padding: 80px 30px; }
-  .ba-team__title {
-    /* Style for "THE TEAM" */
-    color: #333b46;
-    font-family: "Source Sans Pro",sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 12px;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0 auto;
-    letter-spacing: 7px; }
-  .ba-team__text {
-    /* Style for "At vero eo" */
-    width: 457px;
-    color: #81868e;
-    font-family: "Open Sans";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 25px;
-    text-align: center;
-    margin: 20px auto 50px; }
-
-.ba-team__content {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1020px;
-  padding: 0 30px;
-  margin: 0 auto; }
-  .ba-team__content--pic {
-    flex-shrink: 0; }
-    .ba-team__content--pic img {
-      /* Style for "Layer 103" */
-      width: 285px;
-      height: 364px; }
-  .ba-team__content--right {
-    text-align: right; }
-
-.carousel-cell {
-  width: 100%; }
-
-.carousel {
-  /* Style for "Rectangle" */ }
-
-.ba-team__content--right .title {
-  border-right: 4px solid #19bd9a;
-  margin-bottom: 30px;
-  padding-right: 15px; }
-.ba-team__content--right .title h1 {
-  /* Style for "Abdullah N" */
-  color: #464646;
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  display: block; }
-.ba-team__content--right .title h2 {
-  /* Style for "Creative D" */
-  display: block;
-  color: #81868e;
-  font-family: "Source Sans Pro";
-  font-size: 14px;
-  font-weight: 300;
-  font-style: italic;
-  line-height: 25px;
-  text-transform: uppercase;
-  position: relative; }
-.ba-team__content--right p {
-  /* Style for "At vero eo" */
-  width: 370px;
-  color: #81868e;
-  font-family: "Open Sans";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 25px;
-  display: block; }
-
-.already-contact {
-  min-height: 201px;
-  background: url("../img/already.png");
-  text-align: center;
-  padding: 50px 30px; }
-  .already-contact--title {
-    /* Style for "Already Lo" */
-    width: 283px;
-    height: 20px;
-    color: #ffffff;
-    font-family: "Open Sans";
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 25px;
-    margin: 0 auto; }
-  .already-contact--button {
-    /* Style for "BG" */
-    width: 140px;
-    height: 37px;
-    border-radius: 18px;
-    border: 1px solid #ffffff;
-    /* Style for "Contact Us" */
-    color: #ffffff;
-    font-family: "Open Sans";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 12px;
-    background-color: transparent;
-    margin-top: 30px; }
-
-.testimonials {
-  min-height: 650px;
-  background-color: #f3f3f3;
-  text-align: center;
-  padding: 80px 30px; }
-  .testimonials__title {
-    /* Style for "Testimonia" */
-    letter-spacing: 7px;
-    color: #333b46;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 12px;
-    text-transform: uppercase;
-    margin: 0 auto; }
-  .testimonials__text {
-    /* Style for "At vero eo" */
-    color: #81868e;
-    font-family: "Open Sans";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 25px;
-    margin: 30px auto; }
-
-.testimonials__block--slider {
-  width: 1170px;
-  height: 316px;
-  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.05);
-  background-color: #ffffff;
-  margin: 0 auto; }
-
-.testimonials__container {
-  display: flex;
-  justify-content: space-between;
-  background-color: white;
-  max-width: 1170px;
-  padding: 70px 50px;
-  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background-color: #9f9acf;
   text-align: center; }
-  .testimonials__container--right {
-    max-width: 880px;
-    text-align: left;
-    padding: 0 30px; }
-    .testimonials__container--right .text {
-      /* Style for "At vero eo" */
-      color: #81868e;
-      font-family: "Open Sans";
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 28px;
-      margin-bottom: 30px; }
-    .testimonials__container--right .name {
-      /* Style for "PARTHO" */
-      color: #19bd9a;
-      font-family: "Open Sans";
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 20px;
-      text-transform: uppercase; }
-    .testimonials__container--right .proff {
-      /* Style for "FOUNDER, A" */
-      width: 167px;
-      height: 11px;
-      color: #464646;
-      font-family: "Open Sans";
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 20px;
-      text-transform: uppercase; }
-
-.contact-us {
-  min-height: 240px;
-  text-align: center;
-  padding: 60px 30px; }
-  .contact-us h1 {
-    /* Style for "Contact Us" */
-    letter-spacing: 7px;
-    color: #333b46;
-    font-family: "Source Sans Pro";
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 12px;
+  .get-in-touch__icon {
+    width: 42px;
+    margin-top: 60px; }
+  .get-in-touch__title {
+    /* Style for "GET IN TOU" */
+    color: #ffffff;
+    font-family: "Proxima Nova",sans-serif;
+    font-size: 36px;
+    font-weight: 600;
     text-transform: uppercase; }
-  .contact-us p {
-    /* Style for "At vero eo" */
-    width: 457px;
-    color: #81868e;
-    font-family: "Open Sans";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 25px;
-    margin: 0 auto; }
 
 #map {
-  height: 400px;
-  width: 100%; }
+  margin: 0 auto;
+  height: 900px;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 2;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0; }
 
-footer {
-  min-height: 260px;
+.contact__form {
+  max-width: 860px;
+  height: 410px;
+  position: absolute;
+  z-index: 2;
+  top: 370px;
+  left: 0;
+  margin: auto;
+  bottom: 0;
+  right: 0; }
+  .contact__form-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+    .contact__form-info input {
+      font-family: "Proxima Nova",sans-serif;
+      font-style: italic;
+      opacity: 0.6;
+      width: 48%;
+      height: 45px;
+      border: none;
+      padding-left: 25px;
+      border-radius: 4px;
+      outline: none; }
+      .contact__form-info input:focus {
+        opacity: 1;
+        transition: all 0.2s; }
+  .contact__form textarea {
+    margin-top: 25px;
+    font-family: "Proxima Nova",sans-serif;
+    font-style: italic;
+    opacity: 0.6;
+    width: 100%;
+    height: 200px;
+    padding-top: 15px;
+    border: none;
+    padding-left: 25px;
+    border-radius: 4px;
+    outline: none; }
+    .contact__form textarea:focus {
+      opacity: 1;
+      transition: all 0.2s; }
+  .contact__form-btn {
+    display: block;
+    width: 300px;
+    height: 75px;
+    background-color: #9f9acf;
+    border-bottom: 4px solid #8783b0;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-top: 4px solid transparent;
+    margin: 50px auto 0 auto;
+    border-radius: 4px;
+    font-family: "Proxima Nova",sans-serif;
+    /* Style for "SEND MESSA" */
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase; }
+    .contact__form-btn:hover {
+      transform: scale(1.03);
+      border: 4px solid #8783b0;
+      transition: all 0.3s; }
+
+.contact__address {
+  position: absolute;
+  right: 0;
+  top: 210px;
+  z-index: 2;
+  width: 350px;
+  height: 95px;
+  background-color: #fff;
+  transform: translateX(260px);
+  transition: transform 0.1s ease-in; }
+  .contact__address-icon {
+    width: 90px;
+    display: inline-block;
+    height: 100%;
+    background-color: #9f9acf;
+    vertical-align: top;
+    padding-top: 25px; }
+  .contact__address-info {
+    width: 255px;
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    padding-top: 12px; }
+    .contact__address-info p {
+      font-family: "Proxima Nova",sans-serif; }
+  .contact__address:hover {
+    transform: translateX(0);
+    transition: transform 0.7s; }
+  @media all and (max-width: 550px) {
+    .contact__address {
+      right: 0;
+      width: 100%;
+      transform: none; } }
+
+.contact__tel {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  width: 350px;
+  height: 95px;
+  background-color: #fff;
+  transform: translateX(260px);
+  transition: transform 0.1s ease-in;
+  top: 305px; }
+  .contact__tel-icon {
+    padding-top: 30px;
+    width: 90px;
+    display: inline-block;
+    height: 100%;
+    background-color: #9f9acf;
+    vertical-align: top; }
+  .contact__tel-info {
+    width: 255px;
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    padding-top: 35px; }
+  .contact__tel p {
+    font-family: "Proxima Nova",sans-serif; }
+  .contact__tel:hover {
+    transform: translateX(0);
+    transition: transform 0.7s; }
+  @media all and (max-width: 550px) {
+    .contact__tel {
+      right: 0;
+      width: 100%;
+      transform: none; } }
+
+.contact__button-top {
+  position: absolute;
+  right: 10%;
+  bottom: 65px;
+  z-index: 2;
+  width: 85px;
+  height: 85px;
+  background-color: rgba(159, 154, 207, 0.5);
+  padding-top: 30px; }
+  .contact__button-top:hover {
+    bottom: 75px;
+    transition: all 0.7s; }
+  .contact__button-top img {
+    /* Style for "interface" */
+    width: 36px;
+    height: 21px;
+    color: #e6e6e6; }
+  @media all and (max-width: 750px) {
+    .contact__button-top {
+      right: 0; } }
+  @media all and (max-width: 550px) {
+    .contact__button-top {
+      display: none; } }
+
+.footer {
   text-align: center;
-  padding: 70px 30px 40px; }
-  footer p {
-    margin: 30px auto; }
+  position: relative;
+  padding: 70px 30px 40px;
+  /* Style for "Footer-bg" */
+  min-height: 185px;
+  background-color: #9f9acf; }
+  .footer div {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 1110px; }
+    .footer div p {
+      /* Style for "text" */
+      color: white;
+      font-family: "PT Sans", sans-serif;
+      font-size: 18px; }
 
 /*# sourceMappingURL=style.css.map */

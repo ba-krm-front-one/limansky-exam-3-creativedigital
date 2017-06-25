@@ -8,7 +8,7 @@
     });
 
 // make all items draggable
-    var $items = $grid.find('.grid-item').draggable();
+    var $items = $grid.find('.grid-item');
 // bind drag events to Packery
     $grid.packery( 'bindUIDraggableEvents', $items );
 
@@ -17,18 +17,18 @@
 
 //----------------------scroll
 (() => {
-$(document).ready(function () {
-    $('a[href^="#"]').click(function () {
-        elementClick = $(this).attr("href");
-        destination = $(elementClick).offset().top;
-        if ($.browser.safari) {
-            $('body').animate({scrollTop: destination}, 1500);
-        } else {
-            $('html').animate({scrollTop: destination}, 1500);
-        }
-        return false;
+    $(document).ready(function () {
+        $('a[href^="#"]').click(function () {
+            elementClick = $(this).attr("href");
+            destination = $(elementClick).offset().top;
+            if ($.browser.safari) {
+                $('body').animate({scrollTop: destination}, 1500);
+            } else {
+                $('html').animate({scrollTop: destination}, 1500);
+            }
+            return false;
+        });
     });
-});
 })();
 
 
@@ -42,42 +42,20 @@ $('.carousel').flickity({
 });
 
 
-
-
-
 //--------------------------------------------MAP
-;(function () {
-    window.onload = function () {
-        var map,
-            point = {lat: 48.734294, lng: 37.579304},
-            iv1Content = document.querySelector('.info-window');
-
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: point,
-                zoom: 17,
-                disableDefaultUI: true
-            });
-
-            var marker = new google.maps.Marker({
-                position: point,
-                map: map,
-                icon: {
-                url: "img/bbb.png",
-                scaledSize: new google.maps.Size(32, 42)
-            }
-            });
-
-            var infowindow = new google.maps.InfoWindow({
-                content: iv1Content
-            });
-            marker.addListener('click', function () {
-                infowindow.open(map, marker);
-                iv1Content.style.opacity = 1;
-            });
-        }
-        initMap();
-    }
-})();
 
 
+function initMap() {
+    var uluru = {lat: -7.932621, lng:112.6396402 };
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 14,
+        center: uluru,
+        disableDefaultUI: true,
+        scrollwheel:false
+    });
+    var marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+        icon:'pin.png',
+    });
+}
