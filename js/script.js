@@ -8,7 +8,7 @@
     });
 
 // make all items draggable
-    var $items = $grid.find('.grid-item').draggable();
+    var $items = $grid.find('.grid-item');
 // bind drag events to Packery
     $grid.packery( 'bindUIDraggableEvents', $items );
 
