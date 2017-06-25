@@ -14,21 +14,22 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
 
 
+
 </head>
 
 <body>
 
-<header class="ba-header">
+<header id="header" class="ba-header">
     <section class="ba-header__container">
         <section class="ba-header__container--menu">
             <a class="ba-logo" href=""></a>
             <nav>
                 <ul class="ba-menu">
-                    <li class="ba-menu__item"><a class="ba-menu__link" href="#">HOME</a></li>
-                    <li class="ba-menu__item"><a class="ba-menu__link" href="#Portfolio">About</a></li>
-                    <li class="ba-menu__item"><a class="ba-menu__link" href="#Team">service</a></li>
-                    <li class="ba-menu__item"><a class="ba-menu__link" href="#Contact">works</a></li>
-                    <li class="ba-menu__item"><a class="ba-menu__link" href="#Contact">contact</a></li>
+                    <li class="ba-menu__item"><a class="ba-menu__link" href="#header">HOME</a></li>
+                    <li class="ba-menu__item"><a class="ba-menu__link" href="#About">About</a></li>
+                    <li class="ba-menu__item"><a class="ba-menu__link" href="#service">service</a></li>
+                    <li class="ba-menu__item"><a class="ba-menu__link" href="#works">works</a></li>
+                    <li class="ba-menu__item"><a class="ba-menu__link" href="#contact">contact</a></li>
                 </ul>
             </nav>
         </section>
@@ -41,7 +42,7 @@
     </section>
 </header>
 
-<section class="about-us">
+<section id="About" class="about-us">
     <div class="about-us__img">
         <img class="abouts-us__img--icon" src="img/icon-aboutus.png" alt="">
         <p class="abouts-us__img--text">About Us </p>
@@ -61,7 +62,7 @@
 </section>
 
 
-<section class="about-us-cont">
+<section id="service"    class="about-us-cont">
     <section class="about-us__blocks grid">
         <div class="about-us__blocks--square grid-item">
             <img class="square__icon" src="img/icon-graphic.png" alt="">
@@ -94,7 +95,7 @@
 </section>
 
 
-<section class="recent-works">
+<section id="works" class="recent-works">
     <img class="recent-works__icon" src="img/icon-works.png" alt="">
     <h1 class="recent-works__title">RECENT WORKS</h1>
 
@@ -244,7 +245,7 @@
     </form>
 
 
-    <div class="contact__address">
+    <div id="contact" class="contact__address">
         <div class="contact__address-icon">
             <img src="img/icon-address.png" alt="Address">
         </div>
@@ -290,6 +291,7 @@
 <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 <script src="js/flickity.pkgd.js"></script>
 <script src="https://unpkg.com/packery@2/dist/packery.pkgd.js"></script>
+
 <script src="js/script.js"></script>
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmj8yS13SjhoLzvsNuMG2Ys6xERWod96E&callback=initMap"
